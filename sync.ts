@@ -57,3 +57,11 @@ console.log('Ending...');
 // javascript run line by line in synchronous by default
 
 // javascript JavaScript is an asynchronous and concurrent programming language that offers a lot of flexibility. It's single-threaded like synchronous but also non-blocking like asynchronous. Although it's synchronous by nature, JavaScript benefits from an asynchronous process
+
+
+const names: string[] = ["a", "b", "c", "d", "e", "f", "c"];
+
+const ans1:boolean = names.includes("c", 3);
+const ans2:boolean = names.includes("c", 7);
+console.log(ans1)
+console.log(ans2)
