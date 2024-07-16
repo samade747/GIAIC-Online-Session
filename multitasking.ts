@@ -39,6 +39,7 @@ function soaking(callback){
 
 
 function drying(){
+    .
     console.log("drying started");
     setTimeout(() => {
         console.log("drying done");
