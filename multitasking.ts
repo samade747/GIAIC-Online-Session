@@ -37,18 +37,17 @@ function soaking(callback){
     }, 5000);
 }
 
-// function ironing(callback){
-//     console.log("ironing started"); 
-//     setTimeout(() => {
-//         console.log("ironing done");
-//         callback();
-//     }, 3000);
-// }
 
-function drying(callback){
+function drying(){
     console.log("drying started");
     setTimeout(() => {
         console.log("drying done");
     }, 3000);
 }
 
+
+washing(() => {
+    soaking(() => {
+       drying();
+        });
+});
