@@ -105,26 +105,26 @@
 // // }
 
 
-import inquirer from "inquirer";
-import chalk from "chalk";
+// import inquirer from "inquirer";
+// import chalk from "chalk";
 
-async function promptUser() {
-    const answer = await inquirer.prompt({
-        name: "userAnswer",
-        type: "input", 
-        message: "What is the capital of France?",
-    });
+// async function promptUser() {
+//     const answer = await inquirer.prompt({
+//         name: "userAnswer",
+//         type: "input", 
+//         message: "What is the capital of France?",
+//     });
 
-    quiz(answer.userAnswer, "paris");
-}
+//     quiz(answer.userAnswer, "paris");
+// }
 
-function quiz(userAnswer: string, correctAnswer: string) {
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-        console.log(chalk.green("Correct!"));
-    } else {
-        console.log(chalk.red("Wrong!"));
-    }
-}
+// function quiz(userAnswer: string, correctAnswer: string) {
+//     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+//         console.log(chalk.green("Correct!"));
+//     } else {
+//         console.log(chalk.red("Wrong!"));
+//     }
+// }
 
 
 // // promptUser();
